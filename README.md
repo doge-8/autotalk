@@ -30,6 +30,6 @@ gaianet start
 ## 重新制作的镜像待测试
 docker run --name gaianet_my_container -p 8080:8080 --gpus all -v E://docker-data/qdrant_storage:/root/gaianet/qdrant/storage:z gaianet_my
 ## 进入之后使用循环启动功能 
-docker exec -it gaianet /bin/bash
+docker exec -it gaianet_my /bin/bash
 
 nohup python3 gaianet_control.py &
