@@ -1,3 +1,5 @@
+# gaianet自动对话脚本
+
 ## 1安装python
 
 ## 2安装pip
@@ -12,7 +14,7 @@ pip install requests
 
 python3 autotalk.py
 
-#下面的不要看
+#下面是docker跑gpu教程适用win无法自动跑gpu的情况。mac普通安装运行即可，linux未测试。
 
 ### 创建一个文档路径E://docker-data/qdrant_storage
 ### cuda>12.5使用cuda12尾缀，小于使用cuda11
