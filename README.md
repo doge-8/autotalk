@@ -4,5 +4,7 @@
 3安装requests
 pip install requests
 
-4运行
+4修改脚本并保存、把url修改成自己节点的
+
+5运行
 python3 autotalk.py
