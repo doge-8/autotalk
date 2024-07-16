@@ -1,20 +1,16 @@
 import requests
 import time
 
-##url换成自己的
-url = "https://gaianet.network/v1/chat/completions"
-headers = {
-    "accept": "application/json",
-    "Content-Type": "application/json"
-}
-data = {
-    "messages": [
-        {"role": "system", "content": "You are a helpful assistant."},
-        {"role": "user", "content": "Where is Paris?"}
-    ]
-}
-
 while True:
-    response = requests.post(url, headers=headers, json=data)
+    # 发送 HTTP 请求
+    response = requests.post(
+        "https://你的节点地址/v1/chat/completions",
+        headers={"accept": "application/json", "Content-Type": "application/json"},
+        data='{"messages":[{"role":"system", "content": "You are a helpful assistant."}, {"role":"user", "content": "Where is Paris?用中文回答我"}]}'
+    )
+    
+    # 打印响应结果
     print(response.json())
+    
+    # 等待 1 秒钟
     time.sleep(1)
