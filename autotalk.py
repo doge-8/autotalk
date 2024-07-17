@@ -6,9 +6,9 @@ while True:
     try:
         # 发送 HTTP 请求
         response = requests.post(
-            "https://修改此节点号.us.gaianet.network/v1/chat/completions",
+            "https://节点号.us.gaianet.network/v1/chat/completions",
             headers={"accept": "application/json", "Content-Type": "application/json"},
-            data='{"messages":[{"role":"system", "content": "You are a helpful assistant."}, {"role":"user", "content": "Where is Paris?用中文回答我"}]}'
+            data='{"messages":[{"role":"system", "content": "You are now a tour guide in Paris"}, {"role":"user", "content": "Please help me introduce the scenery and tourism culture of Paris"}]}'
         )
 
         # 打印响应结果
